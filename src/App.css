@@ -1,0 +1,75 @@
+:root {
+  --main-peach: #ffc8c4;
+  --white: #f6f1f1;
+  --bgColor: #344C64;
+  --offwhite: #fdfdfd;
+  --darkbtn: #bb8682;
+}
+body{
+  background-color: white;
+}
+.App {
+  text-align: center;
+}
+nav {
+  background-color: var(--bgColor);
+  padding: 0.3rem 3.1rem;
+  color: var(--white);
+  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  
+  
+  align-items: center;
+}
+nav h3 {
+  color: var(--darkbtn);
+  color: white;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 100px;
+}
+nav ul li {
+  margin: 0 15px;
+  color: white;
+}
+.navlink {
+  color: var(--offwhite);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.5s all ease-in-out;
+}
+.navlink:hover {
+  color: var(--darkbtn);
+}
+.logo {
+  color: var(--darkbtn);
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.logoutbtn {
+  background: transparent;
+  padding: 6px 20px;
+  border-radius: 16px;
+  border: 1px solid #ffffff;
+  color: var(--offwhite);
+  cursor: pointer;
+}
+.posts{
+  color: red;
+}
+
+@media (max-width: 600px) {
+  nav {
+    padding: 0.5rem 1rem;
+  }
+  nav ul {
+    margin-right: 20px;
+  }
+}
